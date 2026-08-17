@@ -66,8 +66,3 @@ dripstop_sample_transactions.csv    Sample data to try the app with
 requirements.txt
 .env.example                        Template for your API key — copy to .env
 ```
-
-## Notes
-
-- **Accounts persist, your data doesn't (yet).** Account credentials (salted password hashes) are stored locally in `data/users.db`, which survives restarts. Uploaded transactions, analysis, and Keep/Cancel decisions live only in the browser session — they reset when the app restarts or the tab closes.
-- **Nothing sensitive is committed.** `.env` (your real API key) and `data/` (the accounts database) are both gitignored.
